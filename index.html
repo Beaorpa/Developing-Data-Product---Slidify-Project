@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flowers and Trees</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Flowers and Trees">
+  <meta name="author" content="Beatriz Ortiz">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Flowers and Trees</h1>
+    <h2>Shiny app - Coursera Developing Data Product</h2>
+    <p>Beatriz Ortiz<br/>DSD</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <hr>
+
+<h2>Introduction</h2>
+
+<p>Flowers and trees is a shiny application developed to show the relationship between the growth of different types of plants and two types of nutrients added to the soil to accelerating this growth.We will going to use two files Flowers and Trees</p>
+
+<h2>File Description (Flowers)</h2>
+
+<h3>The flowers file have this variables</h3>
+
+<ol>
+<li>Nutrient : Type of Nitrient </li>
+<li>Quantity: Nutrient added to the pant (cl)</li>
+<li>Petal size : Size flowers petals in (mm)</li>
+<li>Weight : Weight of flowers(gr)</li>
+<li>Color Intensity: Intensity of the petals color</li>
+<li>Durability : Time elapsed until the flower fades (days)</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>File Description (Trees)</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>The flowers file have this variables</h3>
+
+<ol>
+<li>Nutrient : Type of Nitrient added to the plant</li>
+<li>Quantity: Amount of Nutrient added to the pant (cl)</li>
+<li>Leaf size : Size of the trees leaves in (mm)</li>
+<li>Height : Height of trees(m)</li>
+</ol>
+
+<h2>NavBar Menu</h2>
+
+<p>You can access all the option through the Navbar located at the top of Aplication. These are:</p>
+
+<ol>
+<li>Home - Where we show a brief introduction about the shiny aplication</li>
+<li>Table and Summary </li>
+<li>Plot</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Home Option</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>In the Home option we try to show briefly a nice (with flowers) introduction about the shine aplication.</p>
+
+<h2>Table and Summary Option</h2>
+
+<p>This option allows: </p>
+
+<ol>
+<li>A Reactive file selection. That is, we can choose a Flowers or Tree selection. Also we can choose the number of rows which we want to show in a table.</li>
+</ol>
+
+<p>2.Having made the selection we can see a summary operation againts the file and a table with the file and the number of the rows that we have choosed.</p>
+
+<h2>Plot Option</h2>
+
+<p>The Plot Option also allows us to choose files and rows but then we can see a histogram with the selection.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h3>Plot Example</h3>
+  </hgroup>
+  <article data-timings="">
+    <p>This is a plot to show the durability of flower by Nutrient</p>
+
+<pre><code class="r">hist(fr$Durability, main= &quot;Flower Durability by Nutrient&quot;, xlab=&quot;Durability&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='File Description (Trees)'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Home Option'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Plot Example'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
